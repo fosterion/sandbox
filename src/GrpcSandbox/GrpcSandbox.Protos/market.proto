@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcSandbox.Protos";
+
+service Market {
+  rpc SingleItem (ItemRequest) returns (ItemReply);
+  rpc ActualItems (ActualItemsRequest) returns (stream ItemReply);
+  rpc AllItems (AllItemsRequest) returns (stream ItemReply);
+}
+
+message ItemRequest {
+  int32 id = 1;
+}
+
+message ActualItemsRequest {
+	bool isActual = 1;
+}
+
+message AllItemsRequest {
+}
+
+message ItemReply {
+  string name = 1;
+  double price = 2;
+  bool isActual = 3;
+}
