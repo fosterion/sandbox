@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "GrpcSandbox.Protos";
+option csharp_namespace = "Sandbox.Protos";
 
 service Market {
   rpc SingleItem (ItemRequest) returns (ItemReply);
