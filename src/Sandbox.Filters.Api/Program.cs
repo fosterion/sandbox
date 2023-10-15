@@ -1,4 +1,4 @@
-using Sandbox.Api.Middlewares;
+using Sandbox.Filters.Api.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,13 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
+
+    builder.Services.AddScoped<ExceptionFilter>();
 }
 
 var app = builder.Build();
 
 {
-    app.UseMiddleware<ExceptionMiddleware>();
-
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();

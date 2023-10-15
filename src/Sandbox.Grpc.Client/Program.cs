@@ -1,8 +1,8 @@
 ﻿using Grpc.Core;
 using Grpc.Net.Client;
-using Sandbox.Protos;
+using Sandbox.Grpc.Protos;
 
-namespace Sandbox.Client;
+namespace Sandbox.Grpc.Client;
 
 public class Program
 {

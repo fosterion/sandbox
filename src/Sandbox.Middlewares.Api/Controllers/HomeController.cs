@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Sandbox.Api.Controllers;
+namespace Sandbox.Middlewares.Api.Controllers;
 
 [ApiController]
 [Route("home")]

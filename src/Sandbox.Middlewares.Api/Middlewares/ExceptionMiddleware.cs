@@ -1,9 +1,9 @@
-using Sandbox.Api.Models;
+using Sandbox.Middlewares.Api.Models;
 using System.Net;
 using System.Net.Mime;
 using System.Text.Json;
 
-namespace Sandbox.Api.Middlewares;
+namespace Sandbox.Middlewares.Api.Middlewares;
 
 public class ExceptionMiddleware
 {

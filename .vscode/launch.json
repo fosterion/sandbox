@@ -2,13 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Middlewares",
+      "name": "Filters",
       "type": "coreclr",
       "request": "launch",
-      "preLaunchTask": "build-Middlewares",
-      "program": "${workspaceFolder}/src/Middlewares/Sandbox.Api/bin/Debug/net7.0/Sandbox.Api.dll",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Sandbox.Filters.Api/bin/Debug/net7.0/Sandbox.Filters.Api.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/src/Middlewares/Sandbox.Api",
+      "cwd": "${workspaceFolder}/src/Sandbox.Filters.Api",
       "stopAtEntry": false,
       "serverReadyAction": {
         "action": "openExternally",
@@ -16,7 +16,26 @@
         "uriFormat": "%s/swagger"
       },
       "env": {
-        "ASPNETCORE_URLS": "https://localhost:5050",
+        "ASPNETCORE_URLS": "https://localhost:5051",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    {
+      "name": "Middlewares",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Sandbox.Middlewares.Api/bin/Debug/net7.0/Sandbox.Middlewares.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Sandbox.Middlewares.Api",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+        "uriFormat": "%s/swagger"
+      },
+      "env": {
+        "ASPNETCORE_URLS": "https://localhost:5052",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }

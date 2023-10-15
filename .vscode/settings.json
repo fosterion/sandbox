@@ -1,0 +1,7 @@
+{
+  "dotnet.defaultSolution": "src/Sandbox.sln",
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true
+  }
+}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Sandbox.Api.Models;
+namespace Sandbox.Filters.Api.Models;
 
 public class ErrorModel
 {

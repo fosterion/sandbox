@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Sandbox.Server.Services;
+using Sandbox.Grpc.Server.Services;
 
-namespace Sandbox.Server;
+namespace Sandbox.Grpc.Server;
 
 public class Program
 {

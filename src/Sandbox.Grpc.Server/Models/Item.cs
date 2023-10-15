@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Sandbox.Server.Models;
+namespace Sandbox.Grpc.Server.Models;
 
 public class Item
 {

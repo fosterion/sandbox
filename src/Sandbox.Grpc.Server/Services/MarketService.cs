@@ -1,8 +1,8 @@
 using Grpc.Core;
-using Sandbox.Protos;
-using Sandbox.Server.Models;
+using Sandbox.Grpc.Protos;
+using Sandbox.Grpc.Server.Models;
 
-namespace Sandbox.Server.Services;
+namespace Sandbox.Grpc.Server.Services;
 
 public class MarketService : Market.MarketBase
 {
